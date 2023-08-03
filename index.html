@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900|Shrikhand&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 1px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #000;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #fff;
+        }
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .nav-link {
+            color: cyan;
+        }
+
+        .dropdown-item {
+            color: #fff;
+        }
+
+        .topimage:hover {
+            transform: scale(1.01);
+        }
+
+        .owl-carousel:hover {
+            transform: scale(1.01);
+
+        }
+
+        .pc3:hover {
+            transform: scale(1.01);
+
+        }
+
+        .pc2:hover {
+            transform: scale(1.01);
+
+        }
+
+        .pc1:hover {
+            transform: scale(1.01);
+
+        }
+
+        .nc1:hover {
+            transform: scale(1.01);
+
+        }
+
+        .nc2:hover {
+            transform: scale(1.01);
+
+        }
+
+        .nc3:hover {
+            transform: scale(1.01);
+
+        }
+
+        .fc1:hover {
+            transform: scale(1.01);
+
+        }
+
+        .fc2:hover {
+            transform: scale(1.01);
+
+        }
+
+        .fc3:hover {
+            transform: scale(1.01);
+
+        }
+
+        .round-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #152742;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: bottom 0.3s;
+            z-index: 1;
+
+        }
+
+        .round-button:hover {
+            background-color: #333;
+            color: #fff;
+            box-shadow: 5px 5px 2px #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    </head>
+
+    <body>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)">
+                    <h5 class="border p-2 rounded-3 text-light" style="box-shadow: 5px 5px 5px #fff;"> <img
+                            src="./icons8-talent-80.png" alt="" style="height: 30px;">TalentConnect</h5>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">About</a>
+                        </li>
+
+                    </ul>
+
+
+                    <form class="d-flex">
+
+                        <input class="form-control me-2 w-100" type="text" placeholder="Search">
+                        <button class="btn btn-primary shadow-lg" type="button">Search</button>
+
+
+                        &nbsp;&nbsp;
+                        <button class="btn btn-success shadow-lg">
+                            Login
+
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid text-center  "
+            style="background-image: linear-gradient(to right top, #d4fce5, #b5f7f8, #b0ecff, #cddbff, #f5c6f6);">
+            <div class="row">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-8">
+                    <h1 class=" rounded-5 p-3 shadow-lg mt-5 text-success text-center" style="background: rgba( 144, 19, 254, 0.15 );
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                    backdrop-filter: blur( 20px );
+                    -webkit-backdrop-filter: blur( 20px );
+                    border-radius: 10px;
+                    border: 1px solid rgba( 255, 255, 255, 0.18 );
+                    font-weight: bolder;"><br>
+                        Start Your Recruitment Journey
+                    </h1>
+                    <p class="border rounded-5 p-3 shadow-lg text-light mt-3 " style="font-size: 20px;
+                    font-weight: bolder;
+                    
+                        background: rgba( 36, 43, 41, 0.25 );
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                    backdrop-filter: blur( 20px );
+                    -webkit-backdrop-filter: blur( 20px );
+                    border-radius: 10px;
+                    border: 1px solid rgba( 255, 255, 255, 0.18 );">
+                        We’re here to help you find the right talent for your company. With our recruitment solutions
+                        aligned to your needs and expertise specialized in finding ideal candidates, you are just a few
+                        clicks away from conquering the talent landscape.
+
+                    </p>
+
+                </div>
+                <div class="col-md-2">
+
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-8 d-flex">
+                        <input type="text" class="form-control d-flex  border rounded-3" placeholder="Enter your Email">
+                        &nbsp;
+                        <button class="btn btn-success">
+                            Start
+
+                        </button>
+
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-8">
+                    <img src="./62727ac8f4e4d65ee7b28106_1-Hero_profile_new_o.jpg" alt="" srcset=""
+                        class="img-fluid rounded-5  shadow-lg">
+
+                </div>
+                <div class="col-md-2 mb-2">
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="container-fluid" style="background: rgba( 133, 4, 245, 0.3 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );">
+            <div class="row">
+                <div class="header text-center mt-3 border p-3 rounded-3 shadow-lg ">
+                    <b class="h3">Loved by leading staffing teams around the world</b>
+
+                </div>
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-8">
+                    <div class="" style="background: rgba( 255, 255, 255, 0.35 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 20px );
+                -webkit-backdrop-filter: blur( 20px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );">
+                        <marquee behavior="" direction="" class="mt-2">
+
+                            <img src="./62e141c6dde1420d0e8a5977_4-Spinks.svg" alt="" srcset=""> &nbsp;
+                            <img src="./62e538554512d6ef11c4345b_9-Maxima_Consulting.svg" alt="" srcset="">&nbsp;
+                            <img src="./62ebae6e4da7477a33da5800_1-crawfordthomas.svg" alt="" srcset="">&nbsp;
+                            <img src="./62ebae8391d6bac29f387412_3-Reesmarx.svg" alt="">&nbsp;
+                            <img src="./62ebae8391d6bac29f387412_3-Reesmarx.svg" alt="" srcset="">&nbsp;
+                            <img src="./62ebaea99dee1ee8b5a49cb7_7-USA_Staffing_Solutions.svg" alt="" srcset="">&nbsp;
+                            <img src="./62ebafc107602ba5c0658acc_23-EQ_Community.svg" alt="" srcset="">
+                        </marquee>
+                        <marquee behavior="" direction="right">
+                            <img src="./62ebaf3f1c8d353411aa797d_17-Pridestaff.svg" alt="" srcset="">
+                            <img src="./62ebaee8676085b4b1095fa9_11-Speedinvest Heroes.svg" alt="">
+                            <img src="./62ebafc107602ba5c0658acc_23-EQ_Community.svg" alt="">
+                            <img src="./62ebafc97f7f91adeeaa48cb_24-BenchmarkIT.svg" alt="" srcset="">
+                            <img src="./62e141c6dde1420d0e8a5977_4-Spinks.svg" alt="" srcset="">
+                            <img src="./62ebae6e4da7477a33da5800_1-crawfordthomas.svg" alt="" srcset="">
+                            <img src="./62ebaea99dee1ee8b5a49cb7_7-USA_Staffing_Solutions.svg" alt="" srcset="">
+                        </marquee>
+
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-fluid mt-3">
+            <div class="row g-3 p-3">
+                <div class="col-sm-4">
+                    <div class="card text-success shadow-lg text-center h-100" style="background: rgba( 33, 64, 211, 0.35 );
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                    backdrop-filter: blur( 20px );
+                    -webkit-backdrop-filter: blur( 20px );
+                    border-radius: 10px;
+                    border: 1px solid rgba( 255, 255, 255, 0.18 );">
+                        <div class="card-header">
+                            <h1>3X</h1>
+
+                        </div>
+                        <div class="card-body" style="font-size: 20px;">
+                            faster candidate submissions
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-sm-4">
+                    <div class="card text-success shadow-lg text-center h-100" style="background: rgba( 33, 64, 211, 0.35 );
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                    backdrop-filter: blur( 20px );
+                    -webkit-backdrop-filter: blur( 20px );
+                    border-radius: 10px;
+                    border: 1px solid rgba( 255, 255, 255, 0.18 );">
+                        <div class="card-header">
+                            <h1>30%</h1>
+
+                        </div>
+                        <div class="card-body" style="font-size: 20px;">
+                            more candidate placements
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card shadow-lg text-center text-success h-100" style="background: rgba( 33, 64, 211, 0.35 );
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                    backdrop-filter: blur( 20px );
+                    -webkit-backdrop-filter: blur( 20px );
+                    border-radius: 10px;
+                    border: 1px solid rgba( 255, 255, 255, 0.18 );">
+                        <div class="card-header">
+                            <h1>100%
+                            </h1>
+
+                        </div>
+                        <div class="card-body" style="font-size: 20px;">
+                            client satisfaction
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="container-fluid mt-5"
+            style="background-image: linear-gradient(to right top, #051937, #051937, #051937, #051937, #051937);">
+            <div class="row g-4 p-3">
+                <div class="col-md-6">
+                    <div class="card border rounded-5 p-3 h-100 "
+                        style="background-image: linear-gradient(to right top, #051937, #051937, #051937, #051937, #051937);">
+                        <div class="card-body ">
+                            <h1 class="text-success " style="text-shadow: #051937; font-size: 35px;
+                            margin-bottom: 70px;">
+                                Say goodbye to back and forth emails and attachments
+                            </h1>
+                            <p style="font-size: larger;" class="text-light mb-5">
+                                Say hello to a new era of candidate presentation.
+                                With Candidately, forward thinking staffing teams create beautifully branded candidate
+                                submissions that clients can access anywhere and anytime.
+
+                            </p>
+
+                            <button class="btn btn-warning btn-lg">Book a demo
+
+                            </button>
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="col-md-6">
+                    <div class="card border rounded-5 p-3 h-100"
+                        style="background-image: linear-gradient(to right top, #051937, #051937, #051937, #051937, #051937);">
+                        <div class="card-body  ">
+                            <img src="./645c02657f980a6dee0c7ffb_say-goodbye.png" alt="" srcset="" class="img-fluid">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="container-fluid"
+            style="background-image: linear-gradient(to right top, #053725, #053725, #053725, #053725, #053725);">
+            <div class="row g-3 p-3">
+                <div class="col-md-6">
+                    <div class="card h1-100 shadow-lg border rounded-5"
+                        style="background-image: linear-gradient(to right top, #053725, #053725, #053725, #053725, #053725);">
+                        <div class="card-body">
+                            <img src="./61b26293f11b658ade9b1a2e_Bullhorn_iFrame 1.png" alt="" srcset=""
+                                class="img-fluid">
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+
+                    <div class="card text-light h-100 shadow-lg float-left border rounded-5"
+                        style="background-image: linear-gradient(to right top, #053725, #053725, #053725, #053725, #053725);">
+                        <div class="card-body">
+                            <h1 class="mt-3">
+                                Lightning fast submissions, right from within Bullhorn
+                            </h1>
+                            <p class="mt-5 " style="font-size: larger;">Give your team back their time on creating
+                                candidate submittals. Simply pick a candidate from within Bullhorn and share a link with
+                                your clients. As easy as sharing a Dropbox folder or Google document.</p>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="container-fluid text-bg-dark">
+            <div class="row g-3 p-3">
+                <div class="col-md-4">
+                    <div class="card rounded-5 shadow-lg text-bg-dark" style="background: rgba( 189, 16, 224, 0.55 );
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                    backdrop-filter: blur( 20px );
+                    -webkit-backdrop-filter: blur( 20px );
+                    border-radius: 10px;
+                    border: 1px solid rgba( 255, 255, 255, 0.18 );">
+                        <div class="card-img-top">
+                            <div class="ratio ratio-4x3">
+                                <img src="./ai1.jpg" alt="" class="img-fluid rounded-5">
+
+                            </div>
+
+                        </div>
+                        <div class="card-header text-light" style="font-size: 30px;">
+                            Unlimited Earning Options
+
+                        </div>
+                        <div class="card-body text-light" style="font-size: 20px;">
+                            Our platform offers an opportunity to form new connections and open up to unlimited earning
+                            options. With a positive attitude and intriguing networking prospects, you can enlist a
+                            place in the Professional galaxy.
+
+
+                        </div>
+                        <div class="card-footer text-center d-grid">
+                            <button class="text-center btn btn-light">Start</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card rounded-5 shadow-lg text-bg-dark" style="background: rgba( 189, 16, 224, 0.55 );
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                    backdrop-filter: blur( 20px );
+                    -webkit-backdrop-filter: blur( 20px );
+                    border-radius: 10px;
+                    border: 1px solid rgba( 255, 255, 255, 0.18 );">
+                        <div class="card-img-top">
+                            <div class="ratio ratio-4x3">
+                                <img src="./ai3.jpg" alt="" class="img-fluid rounded-5">
+
+                            </div>
+
+                        </div>
+                        <div class="card-header text-light" style="font-size: 30px;">
+                            Recruiting
+
+                        </div>
+                        <div class="card-body text-light" style="font-size: 20px;">
+                            We believe in providing effective solutions for Talent Acquisition and Strategy to help you
+                            achieve your Corporate goals. Innovative Strategies and effective Recruiting is our
+                            guarantee!
+
+
+                        </div>
+                        <div class="card-footer text-center d-grid">
+                            <button class="text-center btn btn-light">Start</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card rounded-5 shadow-lg text-bg-dark" style="background: rgba( 189, 16, 224, 0.55 );
+                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                    backdrop-filter: blur( 20px );
+                    -webkit-backdrop-filter: blur( 20px );
+                    border-radius: 10px;
+                    border: 1px solid rgba( 255, 255, 255, 0.18 );">
+                        <div class="card-img-top">
+                            <div class="ratio ratio-4x3">
+                                <img src="./ai2.jpg" alt="" class="img-fluid rounded-5">
+
+                            </div>
+
+                        </div>
+                        <div class="card-header text-light" style="font-size: 30px;">
+                            Find Candidates
+
+                        </div>
+                        <div class="card-body text-light" style="font-size: 20px;">
+                            Our platform makes for an incredibly powerful tool to help you explore endless job profiles
+                            and become extremely choosy about your Human Capital. You can employ the right candidates in
+                            just a few simple steps!
+
+
+                        </div>
+                        <div class="card-footer text-center d-grid">
+                            <button class="text-center btn btn-light">Start</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="container-fluid text-light"
+            style="background-image: linear-gradient(to right top, #051937, #051937, #051937, #051937, #051937);">
+            <div class="row g-3 p-3">
+                <div class="header text-center border rounded-5 p-3 shadow-lg">
+                    <h1 style="font-size: 40px;">Cost Efficient Pricing</h1>
+
+                    <p style="font-size: 19px;">We understand value and that is why our pricing plans are set to best
+                        suit your needs. With
+                        feature-rich options and Cost-efficient pricing, you can choose from a variety of packages
+                        leaving
+                        no scope for compromise!</p>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card  rounded-5 shadow-lg h-100 border"
+                        style="background-image: linear-gradient(to right top, #051937, #051937, #051937, #051937, #051937);">
+                        <div class="card-header text-center text-success" style="font-size: 30px;">
+                            Lightning <br>
+
+                            $36
+
+                        </div>
+                        <div class="card-body p-5">
+                            <li>
+
+                                Define job roles,
+
+
+                            </li>
+                            <li>
+
+
+                                Post quickly,
+                            </li>
+                            <li>
+
+                                Recruit better,</li>
+                            <li>
+                                Maximize response,
+                            </li>
+                            <li>
+                                Organize hiring.
+                            </li>
+                            <li>
+                                Interview guide
+                            </li>
+
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-outline-success btn-lg rounded-5">
+                                Post Quickly
+
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100  rounded-5 shadow-lg border"
+                        style="background-image: linear-gradient(to right top, #051937, #051937, #051937, #051937, #051937);">
+                        <div class="card-header text-center text-success" style="font-size: 30px;">
+                            Essence <br>
+
+                            $18
+
+                        </div>
+                        <div class="card-body p-5">
+                            <li>
+
+                                Define job roles,
+
+
+                            </li>
+                            <li>
+
+
+                                Edit easily
+                            </li>
+                            <li>
+
+                                Edit easily</li>
+
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-outline-success btn-lg rounded-5">
+                                Post Quickly
+
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 rounded-5 shadow-lg border"
+                        style="background-image: linear-gradient(to right top, #051937, #051937, #051937, #051937, #051937);">
+                        <div class="card-header text-center text-success" style="font-size: 30px;">
+                            Strikes
+
+                            <br>
+
+                            $72
+
+                        </div>
+                        <div class="card-body p-5">
+                            <li>
+
+                                Define job roles,
+
+
+
+                            </li>
+                            <li>
+                                Post quickly,
+
+
+                            </li>
+                            <li>
+
+                                Recruit better,</li>
+                            <li>
+                                Interview guide,
+                            </li>
+                            <li>
+                                Maximize response,
+                            </li>
+                            <li>
+                                Optimize resumes,
+                            </li>
+
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-outline-success btn-lg rounded-5">
+                                Post Quickly
+
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="container-fluid text-bg-dark">
+            <div class="row g-3 p-5">
+                <div class="col-sm-3">
+                    <a href="">Contact</a><br>
+                    <a href="">FAQ</a><br>
+                    <a href="">Company</a><br>
+                    <a href="">About</a><br>
+                    <a href="">Blog</a><br>
+
+                </div>
+                <div class="col-sm-3">
+                    <a href="">Resources</a><br>
+                    <a href="">Privacy</a><br>
+                    <a href="">Testimonal</a><br>
+                    <a href="">Pricing</a>
+
+
+                </div>
+                <div class="col-sm-3">
+                    <a href="">Careers</a><br>
+                    <a href="">Media</a>
+
+                </div>
+                <div class="col-sm-3">
+                    <a href="">Innovation</a><br>
+                    <a href="">Consulting</a><br>
+                    <a href="">SMS & StartUps</a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-md-6">
+                        Follow Us: <i class="fa fa-facebook-square"></i> &nbsp;
+                        <i class="fa fa-instagram"></i> &nbsp;
+                        <i class="fa fa-linkedin-square"></i>
+
+
+                    </div>
+
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>
